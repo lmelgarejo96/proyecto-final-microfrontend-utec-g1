@@ -1,0 +1,101 @@
+{
+  "id": "shell",
+  "name": "shell",
+  "metaData": {
+    "name": "shell",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "shell"
+    },
+    "remoteEntry": {
+      "name": "",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": ".",
+      "api": "."
+    },
+    "globalName": "shell",
+    "pluginVersion": "0.15.0",
+    "prefetchInterface": false,
+    "publicPath": "/"
+  },
+  "shared": [
+    {
+      "id": "shell:react",
+      "name": "react",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/512.139b4367.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "shell:react-dom",
+      "name": "react-dom",
+      "version": "*",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/987.c9c32100.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "shell:react-router-dom",
+      "name": "react-router-dom",
+      "version": "7.6.3",
+      "singleton": true,
+      "requiredVersion": "^7.6.3",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/677.fa9ce753.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "federationContainerName": "rslib_provider",
+      "moduleName": ".",
+      "alias": "provider",
+      "entry": "https://unpkg.com/module-federation-rslib-provider@latest/dist/mf/mf-manifest.json"
+    },
+    {
+      "federationContainerName": "rslib_dashboard",
+      "moduleName": "UNKNOWN",
+      "alias": "dashboard",
+      "entry": "https://your-dashboard-project.web.app/mf-manifest.json"
+    }
+  ],
+  "exposes": []
+}

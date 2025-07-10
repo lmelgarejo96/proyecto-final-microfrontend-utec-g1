@@ -1,0 +1,29 @@
+{
+    "name": "microfrontend-grupo1",
+    "version": "1.0.0",
+    "description": "Sistema de microfrontends con Module Federation",
+    "scripts": {
+        "install:all": "npm install && cd apps/dashboard && npm install && cd ../shell && npm install && cd ../evaluacion && npm install",
+        "dev:dashboard": "cd apps/dashboard && npm run dev",
+        "dev:shell": "cd apps/shell && npm run dev",
+        "dev:evaluacion": "cd apps/evaluacion && npm run dev",
+        "dev": "concurrently \"npm run dev:dashboard\" \"npm run dev:shell\" \"npm run dev:evaluacion\"",
+        "build:dashboard": "cd apps/dashboard && npm run build:prod",
+        "build:shell": "cd apps/shell && npm run build:prod",
+        "build:evaluacion": "cd apps/evaluacion && npm run build:prod",
+        "build:all": "npm run build:dashboard && npm run build:shell && npm run build:evaluacion",
+        "deploy:dashboard": "cd apps/dashboard && npm run deploy",
+        "deploy:shell": "cd apps/shell && npm run deploy",
+        "deploy:evaluacion": "cd apps/evaluacion && npm run deploy",
+        "deploy:all": "npm run build:all && npm run deploy:dashboard && npm run deploy:shell && npm run deploy:evaluacion",
+        "firebase:init": "cd apps/dashboard && firebase init hosting && cd ../shell && firebase init hosting && cd ../evaluacion && firebase init hosting"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "workspaces": [
+        "apps/dashboard",
+        "apps/shell",
+        "apps/evaluacion"
+    ]
+}

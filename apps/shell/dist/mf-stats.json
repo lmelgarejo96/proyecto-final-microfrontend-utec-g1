@@ -1,0 +1,116 @@
+{
+  "id": "shell",
+  "name": "shell",
+  "metaData": {
+    "name": "shell",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "shell"
+    },
+    "remoteEntry": {
+      "name": "",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": ".",
+      "api": "."
+    },
+    "globalName": "shell",
+    "pluginVersion": "0.15.0",
+    "prefetchInterface": false,
+    "publicPath": "/"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "shell:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/512.139b4367.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react-dom",
+      "version": "*",
+      "eager": false,
+      "id": "shell:react-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/987.c9c32100.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^7.6.3",
+      "shareScope": "default",
+      "name": "react-router-dom",
+      "version": "7.6.3",
+      "eager": false,
+      "id": "shell:react-router-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/677.fa9ce753.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [
+    {
+      "alias": "provider",
+      "consumingFederationContainerName": "shell",
+      "federationContainerName": "rslib_provider",
+      "moduleName": ".",
+      "usedIn": [
+        "src/bootstrap.tsx + 9 modules"
+      ],
+      "entry": "https://unpkg.com/module-federation-rslib-provider@latest/dist/mf/mf-manifest.json"
+    },
+    {
+      "entry": "https://your-dashboard-project.web.app/mf-manifest.json",
+      "alias": "dashboard",
+      "moduleName": "UNKNOWN",
+      "federationContainerName": "rslib_dashboard",
+      "consumingFederationContainerName": "shell",
+      "usedIn": []
+    }
+  ],
+  "exposes": []
+}
