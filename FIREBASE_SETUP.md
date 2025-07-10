@@ -124,7 +124,7 @@ Cada microfrontend debe tener su `firebase.json`:
 
 Después del despliegue tendrás:
 
-- **Shell**: `https://utec-app-32384.web.app`
+- **Shell**: `https://utec-app-32384d.web.app`
 - **Dashboard**: `https://g1-dashboard.web.app`
 - **Evaluación**: `https://g1-evaluacion.web.app`
 

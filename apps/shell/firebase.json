@@ -1,6 +1,6 @@
 {
     "hosting": {
-        "site": "utec-app-32384d",
+        "site": "utec-app-3238d",
         "public": "dist",
         "ignore": [
             "firebase.json",
