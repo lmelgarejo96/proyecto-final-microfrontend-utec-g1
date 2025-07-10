@@ -54,7 +54,7 @@
         "js": {
           "async": [],
           "sync": [
-            "static/js/async/987.c9c32100.js"
+            "static/js/async/987.c4ca8235.js"
           ]
         },
         "css": {
@@ -73,7 +73,7 @@
         "js": {
           "async": [],
           "sync": [
-            "static/js/async/677.fa9ce753.js"
+            "static/js/async/677.c9220b23.js"
           ]
         },
         "css": {
@@ -85,16 +85,22 @@
   ],
   "remotes": [
     {
-      "federationContainerName": "rslib_provider",
-      "moduleName": ".",
-      "alias": "provider",
-      "entry": "https://unpkg.com/module-federation-rslib-provider@latest/dist/mf/mf-manifest.json"
+      "federationContainerName": "dashboard",
+      "moduleName": "MicroApp",
+      "alias": "dashboard",
+      "entry": "https://g1-dashboard.web.app/mf-manifest.json"
     },
     {
-      "federationContainerName": "rslib_dashboard",
+      "federationContainerName": "evaluacion",
+      "moduleName": "MicroApp",
+      "alias": "evaluacion",
+      "entry": "https://g1-evaluacion.web.app/mf-manifest.json"
+    },
+    {
+      "federationContainerName": "rslib_provider",
       "moduleName": "UNKNOWN",
-      "alias": "dashboard",
-      "entry": "https://your-dashboard-project.web.app/mf-manifest.json"
+      "alias": "provider",
+      "entry": "https://unpkg.com/module-federation-rslib-provider@latest/dist/mf/mf-manifest.json"
     }
   ],
   "exposes": []

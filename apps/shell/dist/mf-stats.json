@@ -59,7 +59,7 @@
         "js": {
           "async": [],
           "sync": [
-            "static/js/async/987.c9c32100.js"
+            "static/js/async/987.c4ca8235.js"
           ]
         },
         "css": {
@@ -81,7 +81,7 @@
         "js": {
           "async": [],
           "sync": [
-            "static/js/async/677.fa9ce753.js"
+            "static/js/async/677.c9220b23.js"
           ]
         },
         "css": {
@@ -94,20 +94,30 @@
   ],
   "remotes": [
     {
-      "alias": "provider",
+      "alias": "dashboard",
       "consumingFederationContainerName": "shell",
-      "federationContainerName": "rslib_provider",
-      "moduleName": ".",
+      "federationContainerName": "dashboard",
+      "moduleName": "MicroApp",
       "usedIn": [
-        "src/bootstrap.tsx + 9 modules"
+        "src/bootstrap.tsx + 10 modules"
       ],
-      "entry": "https://unpkg.com/module-federation-rslib-provider@latest/dist/mf/mf-manifest.json"
+      "entry": "https://g1-dashboard.web.app/mf-manifest.json"
     },
     {
-      "entry": "https://your-dashboard-project.web.app/mf-manifest.json",
-      "alias": "dashboard",
+      "alias": "evaluacion",
+      "consumingFederationContainerName": "shell",
+      "federationContainerName": "evaluacion",
+      "moduleName": "MicroApp",
+      "usedIn": [
+        "src/bootstrap.tsx + 10 modules"
+      ],
+      "entry": "https://g1-evaluacion.web.app/mf-manifest.json"
+    },
+    {
+      "entry": "https://unpkg.com/module-federation-rslib-provider@latest/dist/mf/mf-manifest.json",
+      "alias": "provider",
       "moduleName": "UNKNOWN",
-      "federationContainerName": "rslib_dashboard",
+      "federationContainerName": "rslib_provider",
       "consumingFederationContainerName": "shell",
       "usedIn": []
     }
