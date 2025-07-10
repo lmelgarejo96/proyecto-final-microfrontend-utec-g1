@@ -1,23 +1,15 @@
-// Configuración de despliegue para Firebase
+// Configuración de despliegue para Firebase - UN SOLO PROYECTO
 const environments = {
-    development: {
-        shell: {
-            projectId: 'shell-dev-proyecto',
-            url: 'https://shell-dev-proyecto.web.app'
-        },
-        dashboard: {
-            projectId: 'dashboard-dev-proyecto',
-            url: 'https://dashboard-dev-proyecto.web.app'
-        }
-    },
     production: {
+        projectId: 'utec-app',
         shell: {
-            projectId: 'shell-prod-proyecto',
-            url: 'https://shell-prod-proyecto.web.app'
+            url: 'https://utec-app-32384.web.app'
         },
         dashboard: {
-            projectId: 'dashboard-prod-proyecto',
-            url: 'https://dashboard-prod-proyecto.web.app'
+            url: 'https://g1-dashboard.web.app'
+        },
+        evaluacion: {
+            url: 'https://g1-evaluacion.web.app'
         }
     }
 };

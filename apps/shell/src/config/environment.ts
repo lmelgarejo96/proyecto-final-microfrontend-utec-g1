@@ -16,15 +16,15 @@ const developmentUrls = {
 };
 
 const productionUrls = {
-  dashboard: getEnvVar('REACT_APP_DASHBOARD_URL') || 'https://dashboard-prod-proyecto.web.app',
+  dashboard: getEnvVar('REACT_APP_DASHBOARD_URL') || 'https://g1-dashboard.web.app',
   auth: getEnvVar('REACT_APP_AUTH_URL') || 'https://auth-prod-proyecto.web.app', 
-  calificacion: getEnvVar('REACT_APP_CALIFICACION_URL') || 'https://calificacion-prod-proyecto.web.app',
+  calificacion: getEnvVar('REACT_APP_CALIFICACION_URL') || 'https://g1-evaluacion.web.app',
 };
 
 const stagingUrls = {
-  dashboard: getEnvVar('REACT_APP_DASHBOARD_URL') || 'https://dashboard-dev-proyecto.web.app',
+  dashboard: getEnvVar('REACT_APP_DASHBOARD_URL') || 'https://g1-dashboard.web.app',
   auth: getEnvVar('REACT_APP_AUTH_URL') || 'https://auth-dev-proyecto.web.app',
-  calificacion: getEnvVar('REACT_APP_CALIFICACION_URL') || 'https://calificacion-dev-proyecto.web.app',
+  calificacion: getEnvVar('REACT_APP_CALIFICACION_URL') || 'https://g1-evaluacion.web.app',
 };
 
 // Detectar ambiente de forma segura
@@ -65,8 +65,6 @@ export const environment = {
   
   // Configuración de Firebase
   firebase: {
-    projectId: currentEnv === 'production' 
-      ? 'shell-prod-proyecto'
-      : 'shell-dev-proyecto',
+    projectId: 'utec-app',
   }
 }; 
