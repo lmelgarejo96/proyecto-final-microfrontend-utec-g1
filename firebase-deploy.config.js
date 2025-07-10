@@ -1,7 +1,7 @@
 // Configuración de despliegue para Firebase - UN SOLO PROYECTO
 const environments = {
     production: {
-        projectId: 'utec-app',
+        projectId: 'utec-app-3238d',
         shell: {
             url: 'https://utec-app-32384.web.app'
         },

@@ -5,7 +5,7 @@
 - **g1-dashboard** → Para Dashboard
 - **g1-evaluacion** → Para Evaluación
 - **utec-app-32384** → Para Shell (site principal)
-- **Proyecto**: `utec-app`
+- **Proyecto**: `utec-app-3238d`
 
 ## 🚀 Pasos para configurar Firebase CLI:
 
@@ -22,7 +22,7 @@ firebase login
 ### 3. Configurar Shell (apps/shell)
 ```bash
 cd apps/shell
-firebase init hosting --project utec-app
+firebase init hosting --project utec-app-3238d
 ```
 
 **Cuando pregunte por el site, selecciona:** `utec-app-32384`
@@ -30,7 +30,7 @@ firebase init hosting --project utec-app
 ### 4. Configurar Dashboard (apps/dashboard)
 ```bash
 cd ../dashboard
-firebase init hosting --project utec-app
+firebase init hosting --project utec-app-3238d
 ```
 
 **Cuando pregunte por el site, selecciona:** `g1-dashboard`
@@ -38,7 +38,7 @@ firebase init hosting --project utec-app
 ### 5. Configurar Evaluación (apps/evaluacion)
 ```bash
 cd ../evaluacion
-firebase init hosting --project utec-app
+firebase init hosting --project utec-app-3238d
 ```
 
 **Cuando pregunte por el site, selecciona:** `g1-evaluacion`
@@ -108,7 +108,7 @@ firebase login:ci
 Ve a tu repositorio → Settings → Secrets → Actions → New repository secret:
 
 1. **FIREBASE_TOKEN** → El token de `firebase login:ci`
-2. **FIREBASE_PROJECT_ID** → `utec-app`
+2. **FIREBASE_PROJECT_ID** → `utec-app-3238d`
 
 ## 🌐 URLs después del despliegue:
 
@@ -121,7 +121,7 @@ Ve a tu repositorio → Settings → Secrets → Actions → New repository secr
 ```bash
 # Probar que todo funciona
 firebase projects:list
-firebase hosting:sites:list --project utec-app
+firebase hosting:sites:list --project utec-app-3238d
 ```
 
 ## 🚀 Probar despliegue manual:
@@ -132,15 +132,15 @@ npm run build:all
 
 # Desplegar Dashboard
 cd apps/dashboard
-firebase deploy --project utec-app
+firebase deploy --project utec-app-3238d
 
 # Desplegar Evaluación
 cd ../evaluacion
-firebase deploy --project utec-app
+firebase deploy --project utec-app-3238d
 
 # Desplegar Shell
 cd ../shell
-firebase deploy --project utec-app
+firebase deploy --project utec-app-3238d
 ```
 
 ## 🎉 ¡Listo!

@@ -13,7 +13,7 @@
 
 1. Ve a [Firebase Console](https://console.firebase.google.com)
 2. Click en **"Agregar proyecto"** o **"Add project"**
-3. Nombre del proyecto: `utec-app`
+3. Nombre del proyecto: `utec-app-3238d`
 4. Acepta los términos y crea el proyecto
 
 ### 2. Habilitar Firebase Hosting
@@ -52,17 +52,17 @@ firebase login:ci
 ```bash
 # Configurar Shell (site principal)
 cd apps/shell
-firebase init hosting --project utec-app
+firebase init hosting --project utec-app-3238d
 # Cuando pregunte por el site, selecciona: utec-app-32384
 
 # Configurar Dashboard (site adicional)
 cd ../dashboard
-firebase init hosting --project utec-app
+firebase init hosting --project utec-app-3238d
 # Cuando pregunte por el site, selecciona: g1-dashboard
 
 # Configurar Evaluación (site adicional)
 cd ../evaluacion
-firebase init hosting --project utec-app
+firebase init hosting --project utec-app-3238d
 # Cuando pregunte por el site, selecciona: g1-evaluacion
 ```
 
@@ -133,7 +133,7 @@ Después del despliegue tendrás:
 Solo necesitas configurar 2 secrets:
 
 1. `FIREBASE_TOKEN` → El token de `firebase login:ci`
-2. `FIREBASE_PROJECT_ID` → `utec-app`
+2. `FIREBASE_PROJECT_ID` → `utec-app-3238d`
 
 ## 🚀 Probar localmente
 
@@ -141,17 +141,17 @@ Solo necesitas configurar 2 secrets:
 # Probar Shell
 cd apps/shell
 npm run build:prod
-firebase serve --project utec-app
+firebase serve --project utec-app-3238d
 
 # Probar Dashboard
 cd apps/dashboard
 npm run build:prod
-firebase serve --project utec-app
+firebase serve --project utec-app-3238d
 
 # Probar Evaluación
 cd apps/evaluacion
 npm run build:prod
-firebase serve --project utec-app
+firebase serve --project utec-app-3238d
 ```
 
 ## 🎉 ¡Listo!

@@ -22,7 +22,7 @@ Push a main → Build → Deploy a Firebase
 
 Solo 2 secrets en GitHub:
 - `FIREBASE_TOKEN`
-- `FIREBASE_PROJECT_ID` → `utec-app`
+- `FIREBASE_PROJECT_ID` → `utec-app-3238d`
 
 ## 🚀 Activar
 

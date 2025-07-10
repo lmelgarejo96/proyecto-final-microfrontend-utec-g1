@@ -65,6 +65,6 @@ export const environment = {
   
   // Configuración de Firebase
   firebase: {
-    projectId: 'utec-app',
+    projectId: 'utec-app-3238d',
   }
 }; 
