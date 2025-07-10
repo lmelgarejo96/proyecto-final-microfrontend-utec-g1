@@ -14,7 +14,7 @@ export default defineConfig({
   
   // Configuración HTML (usar template por defecto)
   html: {
-    title: 'Microfrontend Shell',
+    title: 'Siniestros Vehiculares',
   },
   
   // Definir variables globales para evitar errores de process

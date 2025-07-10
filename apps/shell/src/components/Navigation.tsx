@@ -10,7 +10,7 @@ const Navigation: React.FC = () => {
     <nav className="navigation">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          <h1>Microfrontend Shell</h1>
+          <h1>Siniestros Vehiculares</h1>
         </Link>
         <ul className="nav-menu">
           <li className="nav-item">
